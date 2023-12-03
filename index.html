@@ -4,15 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events</title>
-    <script defer src="partyplan.js"></script>
+    <title>Party Planner</title>
+    <link rel="stylesheet" href="index.css" />
 </head>
 
 <body>
-    <h1>Events</h1>
+    <h1>All Events</h1>
+    <div id="eventList"> 
+    </div>
 
-
-    <ul id="events"></ul>
+    <h4>Add Your Event</h4>
+    <form id="addEvent">
+        <input id="name" type="text" placeholder="NAME" name="name">
+		  <input id="date" type="datetime-local" name="date">
+		  <input id="location" type="text" placeholder="LOCATION" name="location">
+          <textarea id="description" type="text" placeholder="INCLUDE DESCRIPTION OF EVENT HERE" name="description"></textarea>
+          <button type="submit">Add Event!</button>
+    </form>
+    <script src="index.js"></script> 
 </body>
 
 </html>
